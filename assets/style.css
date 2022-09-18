@@ -47,7 +47,6 @@ header {
 header div {
   display: flex;
   justify-content: center;
-  /* padding: 24px; */
   transition: transform 0.3s;
 }
 
@@ -88,7 +87,6 @@ section {
 section div {
   background-color: #2a2634;
   border-radius: 8px;
-  padding: 32px;
   padding: 24px;
 }
 
@@ -107,8 +105,6 @@ section p {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-top: 24px;
-  margin: auto;
 }
 
 .games-list img {
