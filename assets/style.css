@@ -146,7 +146,7 @@ section {
 }
 
 section:nth-child(1) {
-  animation-delay: .2;
+  animation-delay: 0.2;
 }
 
 section:nth-child(2) {
@@ -155,6 +155,7 @@ section:nth-child(2) {
 
 section:nth-child(3) {
   animation-delay: 0.8s;
+  margin-bottom: 32px;
 }
 
 @keyframes fromTop {
