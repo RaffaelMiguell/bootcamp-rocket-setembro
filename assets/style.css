@@ -35,11 +35,19 @@ main {
   gap: 24px;
 }
 
+header {
+  /* background-color: aliceblue; */
+  height: 150px; /* altura adicionada para funcionamento da animação */
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header div {
   display: flex;
   justify-content: center;
-  padding: 24px;
-  background-color: antiquewhite;
+  /* padding: 24px; */
   transition: transform 0.3s;
 }
 
@@ -48,32 +56,30 @@ header div:hover {
 }
 
 .perfil {
-  margin: 32px auto;
+  /* margin: 32px auto; */
   background-image: linear-gradient(
     110deg,
-    rgb(102, 255, 0) 10%,
-    rgb(255, 115, 0) 50%,
-    rgb(255, 2, 69) 90%
+    rgb(181, 117, 230) 10%,
+    rgb(0, 238, 255) 50%,
+    rgb(255, 251, 10) 90%
   );
   border-radius: 50%;
   padding: 2.5px;
-  width: 120px;
+  width: 105px;
 }
 
 .perfil img {
   width: 100%;
   border-radius: 50%;
-
-  /*linear-gradient(110deg, rgb(102, 255, 0) 10%, rgb(255, 115, 0) 50%, rgb(255, 2, 69) 90%); */
 }
 
 section {
   color: hsl(0, 0%, 100%);
   background-image: linear-gradient(
     110deg,
-    rgb(102, 255, 0) 10%,
-    rgb(255, 115, 0) 50%,
-    rgb(255, 2, 69) 90%
+    rgb(181, 117, 230) 10%,
+    rgb(0, 238, 255) 50%,
+    rgb(255, 251, 10) 90%
   );
   padding-top: 3px;
   border-radius: 10.5px;
@@ -131,25 +137,51 @@ section p {
   transform: scale(1.1);
 }
 
-
 /* animações */
 
-header div{
-  animation: fromTop .3s;
+header div {
+  animation: fromTop 0.7s 0.2s backwards;
+  /* .7s = duração - 4s = delay */
+  /* backwards = puxar propriedades do keyframe */
 }
 
-section div:nth-child(1){}
-section div:nth-child(2){}
-section div:nth-child(3){}
+section {
+  animation: toTop 0.7s backwards;
+}
 
+section:nth-child(1) {
+  animation-delay: .2;
+}
+
+section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+section:nth-child(3) {
+  animation-delay: 0.8s;
+}
 
 @keyframes fromTop {
   /* fromTop foi o nome escolhido para a animação */
   from {
-    transform: translateY(-40px);
+    opacity: 0;
+    transform: translateY(-80px);
   }
 
   to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toTop {
+  from {
+    opacity: 0;
+    transform: translatex(200px);
+  }
+
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
