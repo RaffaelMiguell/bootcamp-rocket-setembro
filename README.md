@@ -4,7 +4,7 @@
 
 ![preview](./.github/bootcamp-rocket.png)
 
->Criação de uma *landscape*, com inspiração no bootscamp da empresa Rocketseat.
+>Criação de uma *landpage*, com inspiração no bootscamp da empresa Rocketseat.
 
 ---
 ## TECNOLOGIAS UTILIZADAS:
