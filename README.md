@@ -11,7 +11,7 @@
 
 - HTML
 - CSS
-- GITUB
+- GITHUB
 
 [Clique aqui para visualizar](https://raffaelmiguell.github.io/bootcamp-rocketseat/)
 
