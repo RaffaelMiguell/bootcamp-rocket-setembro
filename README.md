@@ -13,7 +13,7 @@
 - CSS
 - GITHUB
 
-[Clique aqui para visualizar](https://raffaelmiguell.github.io/bootcamp-rocketseat/)
+[Clique aqui para visualizar](https://raffaelmiguell.github.io/bootcamp-rocket-setembro)
 
 
 
